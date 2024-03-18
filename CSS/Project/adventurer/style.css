@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(235, 235, 235);
+}
+.container{
+    width: 1200px;
+   
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.nav{
+    display: flex;
+    gap:30px
+}
+
+#slide{
+    background-color: #1ABC9C;
+    text-align: center;
+    color:white;
+}
+
+#slide .who-am-i{
+    font-size: 24px;
+    padding: 50px 0;
+}
+#slide .image img{
+    border-radius: 50%;
+}
+#slide .aventure{
+    font-size: 26px;
+    padding: 50px 0;
+}
