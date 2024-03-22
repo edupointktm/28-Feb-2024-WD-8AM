@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        ul{
+              list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            
+        }
+
+        .cont ul li{
+            background-color: orangered;
+            
+            float: left;
+            width: 150px;
+            text-align: center;
+            
+        }
+
+        .cont ul ul li{
+            text-align: left;
+           
+        }
+
+        .cont ul li a{
+            display: inline-block;
+            padding: 10px 5px;
+        }
+
+        ul ul li{
+            /* display:  none; */
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <ul>
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#">About</a> </li>
+            <li> <a href="#">Services</a> 
+                <ul>
+                    <li><a href="">Graphics Design</a></li>
+                    <li><a href="">Web Design</a></li>
+                    <li><a href="">Marketing</a></li>
+                    <li><a href="">Branding </a>
+                        <ul>
+                            <li><a href="#">Corporate Branding</a></li>
+                            <li><a href="#">Personal Branding</a></li>
+                            <li><a href="#">Place Branding</a></li>
+                            <li><a href="#">Digital Branding</a></li>                           
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li> <a href="#">Portfolio</a> </li>
+            <li> <a href="#">Contact</a> </li>
+        </ul>
+    </div>
+</body>
+
+
+
+ 
+
+
+
+
+</html>
