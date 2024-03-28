@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 100px auto;
+            width: 450px;
+            height: 350px;
+            border: 1px solid rgb(110, 110, 110);
+
+
+
+        }
+
+        .box {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .container .box img {
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            animation-name: slider;
+            animation-duration: 10s;
+
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            /* transform: translateX(-450px); */
+        }
+        
+        @keyframes slider {
+            0% {transform: translate(0);}
+            25% {transform: translate(0);}
+
+            30% {transform: translate(-450px);}
+            70% {transform: translate(-450px);}
+
+            80% {transform: translate(-900px);}
+            100% {transform: translate(-900px);}
+        }
+    </style>
+</head>
+
+<body>
+    
+       
+
+        <div class="container">
+
+            <div class="box">
+                <img src="https://www.plannepal.com/assets/img/our-specialities/trekking-banner-special.jpg?ver=1465419556"
+                    alt="">
+                <img src="https://www.plannepal.com/uploads/2016/06/thumb/46f253292afc8b66132c97011e209f31.jpg?ver=1464951312"
+                    alt="">
+                <img src="https://www.plannepal.com/uploads/2020/07/thumb/42168985d711c6fb04d32c02f3c40500.jpg?ver=1595993929"
+                    alt="">
+            </div>
+        </div>
+    
+</body>
+
+</html>

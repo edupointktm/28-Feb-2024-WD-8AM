@@ -3,52 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nav Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         *{
             padding: 0;
             margin: 0;
-            box-sizing: border-box;
         }
         ul{
-              list-style: none;
+            list-style: none;
         }
-        a{
+        a, i{
             text-decoration: none;
-            color: white;
-            
+            color:black;
+            display: inline-block;
+            padding: 10px 10px;
         }
 
-        .cont ul li{
-            background-color: orangered;
-            
+        ul li{
             float: left;
             width: 150px;
             text-align: center;
-            
+            background-color: orange;
+            border-right: 1px solid white;
+            /* border-radius: 2px; */
+        
+        }
+        ul ul li{
+            text-align: left;
+            position: relative;
+            border-bottom: 1px solid white;
         }
 
-        .cont ul ul li{
-            text-align: left;
+        ul ul ul{
+            position: absolute;
+            top: 0;
+            left: 100%;
+        }
+
+        ul ul{
+            display: none;
+        }
+        ul li:hover > ul{
+            display: block;
+        }
+        ul li:hover{
+            background-color: orangered;
            
         }
-
-        .cont ul li a{
-            display: inline-block;
-            padding: 10px 5px;
+       
+       
+       
+        ul li a:hover{
+            color:white;    
         }
-
-        ul ul li{
-            /* display:  none; */
-        }
+       input[type="text"]{
+        padding: 10px;
+       }
     </style>
 </head>
 <body>
     <div class="cont">
         <ul>
-            <li> <a href="#">Home</a> </li>
-            <li> <a href="#">About</a> </li>
-            <li> <a href="#">Services</a> 
+            <li><i class="fa-solid fa-house-user"></i> <a href="#"> Home</a> </li>
+            <li> <i class="fa-solid fa-address-card"></i> <a href="#">About</a> 
+            <ul>
+                <li><a href="">College</a>
+                    <ul>
+                        <li><a href="">College One</a></li>
+                        <li><a href="">College Two</a></li>
+                        <li><a href="">College Three</a>
+                            <ul>
+                                <li><a href="">Sub One</a></li>
+                                <li><a href="">Sub Two</a></li>
+                                <li><a href="">Sub Three</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">School</a></li>
+            </ul>
+            </li>
+            <li> <i class="fa-brands fa-servicestack"></i> <a href="#">Services</a> 
                 <ul>
                     <li><a href="">Graphics Design</a></li>
                     <li><a href="">Web Design</a></li>
@@ -58,15 +94,35 @@
                             <li><a href="#">Corporate Branding</a></li>
                             <li><a href="#">Personal Branding</a></li>
                             <li><a href="#">Place Branding</a></li>
-                            <li><a href="#">Digital Branding</a></li>                           
+                            <li><a href="#">Digital Branding</a>
+                                <ul>
+                                    <li><a href="">One</a></li>
+                                    <li><a href="">Two</a></li>
+                                    <li><a href="">Three</a></li>
+                                </ul>
+                            </li>                           
                         </ul>
                     </li>
                 </ul>
             </li>
-            <li> <a href="#">Portfolio</a> </li>
-            <li> <a href="#">Contact</a> </li>
+            <li> <i class="fa-brands fa-envira"></i> <a href="#">Portfolio</a> </li>
+            <li> <i class="fa-solid fa-address-book"></i><a href="#"> Contact</a>
+                <ul>
+                    <li><a href="#">Home Contact</a></li>
+                    <li><a href="#">Office Contact</a>
+                        <ul>
+                            <li><a href="">Office one</a></li>
+                            <li><a href="">Office Two</a></li>
+                            <li><a href="">Office Three</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </div>
+    <br><br><br>
+
+    
 </body>
 
 

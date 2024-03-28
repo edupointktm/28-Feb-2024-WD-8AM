@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+
+            position: relative;
+
+            animation-name: box-move;
+            animation-duration: 4s;
+
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes box-move {
+            0%{left:0;top:0;background-color: blue;}
+            25%{Left:700px;top:0; background-color: green;}
+            50%{Left:700px;top:300px; background-color: rgb(255, 255, 0);}
+            75%{Left:0;top:300px; background-color: darkorange;}
+            100%{Left:0;top:0; background-color: chartreuse;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

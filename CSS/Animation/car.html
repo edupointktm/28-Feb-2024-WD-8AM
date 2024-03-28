@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .car-box {
+            width: 250px;
+            /* height: 250px; */
+            position: relative;
+            padding: 0;
+            margin: 0;
+            
+          
+
+            animation-name: car-slide;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+            /* transform: rotate(90deg); */
+
+        }
+        .car-box img{
+            width: 100%;
+            height: 100%;
+        }
+        @keyframes car-slide {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+
+            20% {
+                left: 900px;
+                top: 0px;
+                transform: rotate(0deg);
+            }
+
+            25% {
+                left: 900px;
+                top: 0px;
+                transform: rotate(90deg);
+            }
+
+             50% {left: 900px; top: 600px; transform: rotate(90deg);}
+            
+            55% {left: 900px; top: 600px; transform: rotate(180deg);}
+            75% {left: 0px ; top: 600px; transform: rotate(180deg);}
+            
+            80% {left: 0px ; top: 600px; transform: rotate(270deg);}
+            100% {left: 0px; top: 0px; transform: rotate(270deg);}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="car-box">
+        <div class="car">
+            <img
+                src="https://media.istockphoto.com/id/1138785358/photo/generic-red-car-top-angle.jpg?s=612x612&w=0&k=20&c=0vuZ57H_Rl4ddgYz0uiv4_f0g2uzEcl2oNSA1s7Vdf0="                >
+        </div>
+    </div>
+</body>
+
+</html>
