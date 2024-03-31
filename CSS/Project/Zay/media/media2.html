@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;           
+            border: 1px solid red;
+        }
+        .left{
+            width: 300px;
+            height: 550px;
+            background-color: red;
+        }
+        .right{
+            width: 1400px;
+            height: 550px;
+            background-color: rgb(2, 78, 26);
+        }
+
+        .bars{
+            font-size: 35px;
+            position: absolute;
+            right: 20px;
+            /* top:600px; */
+            color:white;
+            display: none;
+        }
+
+        @media screen and (max-width:800px) {
+            .left{
+                display: none;
+            }
+            .right{
+                width: 100%;
+            }
+            .bars{
+                display: block;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="bars"><i class="fa-solid fa-bars"></i></div>
+    <div class="container">
+        <div class="left">Left Sider bar</div>
+        <div class="right"> Right Side</div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/689e11689f.js" crossorigin="anonymous"></script>
+</body>
+</html>

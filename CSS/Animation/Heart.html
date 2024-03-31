@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: rgb(255, 0, 0);
+            margin: 200px auto;
+            transform: rotate(45deg);
+
+            /* border-radius: 50%; */
+
+            animation-name: heart;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .box::before{
+            content: "";
+            width: 150px;
+            height: 150px;
+            background-color: rgb(255, 0, 0);
+            position: absolute;
+            transform: translateX(-70px);
+            border-radius: 50%;
+        }
+
+        .box::after{
+            content: "";
+            width: 150px;
+            height: 150px;
+            background-color: rgb(255, 0, 0);
+            position: absolute;
+            transform: translateY(-70px);
+            border-radius: 50%;
+        }
+
+        @keyframes heart {
+            0%{transform: scale(1) rotate(45deg);}
+            25%{transform: scale(0.75)rotate(45deg);}
+            50%{transform: scale(1)rotate(45deg);}
+            75%{transform: scale(1.25)rotate(45deg);}
+            100%{transform: scale(1)rotate(45deg);}
+
+            
+        }
+    </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
