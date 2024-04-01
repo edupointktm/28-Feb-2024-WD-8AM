@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            display: grid;
+            gap:15px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 150px 150px 100px;
+            grid-template-areas: "head head head" 
+                                 "sidebar cont-1 cont-1"
+                                 "sidebar cont-2 cont-3"
+                                 "footer footer footer";
+        }
+        .header{
+            background-color: red;
+            grid-area: head;
+        }
+        .sidebar{
+            background-color: blue;
+            grid-area: sidebar;
+        }
+        .content-1{
+            background-color: darkcyan;
+            grid-area: cont-1;
+        }
+        .content-2{
+            background-color: rgb(248, 233, 32);
+            grid-area: cont-2;
+
+        }
+        .content-3{
+            background-color: rgb(34, 170, 255);
+            grid-area: cont-3;
+        }
+        .footer{
+            background-color: burlywood;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="header">Header</div>
+        <div class="sidebar">SideBar</div>
+        <div class="content-1">Content-1</div>
+        <div class="content-2">Content-2</div>
+        <div class="content-3">Content-3</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

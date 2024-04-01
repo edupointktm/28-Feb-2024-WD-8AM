@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-red{
+            background-color: red;
+        }
+        .bg-blue{
+            background-color: blue;
+        }
+        .bg-pink{
+            background-color: palevioletred;
+        }
+        .bg-green{
+            background-color: green;
+        }
+
+        .cont{
+            display: grid;
+            gap:5px;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: 100px 150px 250px;
+
+
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box bg-red">One</div>
+        <div class="box bg-green">Two</div>
+        <div class="box bg-pink">Three</div>
+        <div class="box bg-red">Four</div>
+        <div class="box bg-blue">Five</div>
+        <div class="box bg-green">Six</div>
+    </div>
+</body>
+</html>
