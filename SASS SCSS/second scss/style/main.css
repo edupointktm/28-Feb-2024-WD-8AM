@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: rgb(0, 86, 86);
+  padding: 20px 0;
+}
+header .container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .logo {
+  font-size: 35px;
+  color: yellow;
+}
+header .container nav ul {
+  display: flex;
+  gap: 25px;
+}
+header .container nav ul li a {
+  color: white;
+}
+header .container .social-media {
+  font-size: 20px;
+  color: orange;
+}
+header .container .social-media i {
+  padding: 0 10px;
+}/*# sourceMappingURL=main.css.map */
