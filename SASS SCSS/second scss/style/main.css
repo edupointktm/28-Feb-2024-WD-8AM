@@ -13,27 +13,40 @@ ul {
   list-style: none;
 }
 
+.flex, header .container nav ul, header .container {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
 header {
-  background-color: rgb(0, 86, 86);
+  background-color: rgb(1, 82, 82);
   padding: 20px 0;
 }
 header .container {
   width: 1200px;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 header .container .logo {
   font-size: 35px;
   color: yellow;
 }
-header .container nav ul {
-  display: flex;
-  gap: 25px;
+header .container nav {
+  margin-right: 250px;
+}
+header .container nav ul li {
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 header .container nav ul li a {
   color: white;
+}
+header .container nav ul li a:hover {
+  color: red;
+}
+header .container nav ul li:hover {
+  background-color: yellow;
 }
 header .container .social-media {
   font-size: 20px;
@@ -41,4 +54,10 @@ header .container .social-media {
 }
 header .container .social-media i {
   padding: 0 10px;
+}
+
+#slider .image {
+  background-image: url(https://prabhatmallik.com.np/html/01/assets/img/hero-bg.jpg);
+  height: 650px;
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */
