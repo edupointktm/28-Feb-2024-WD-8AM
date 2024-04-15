@@ -1,0 +1,28 @@
+#about {
+    padding: 30px 0;
+
+    .container {
+        @include container();
+
+        .heading {
+            @include heading();
+        }
+
+        .content {
+            // @include sub-heading();
+        }
+
+        .box {
+            @extend .flex;
+
+            // .left {}
+
+            .right {
+                .sub-heading {
+                    @include heading();
+                }
+
+            }
+        }
+    }
+}

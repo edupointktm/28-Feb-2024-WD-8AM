@@ -1,0 +1,36 @@
+#facts {
+    padding: 30px 0;
+
+    .container {
+        @include container();
+
+        .heading {
+            @include heading();
+        }
+
+        .content {
+            // @include heading();
+        }
+
+        .box {
+            @extend .flex;  
+            padding: 0 25px;
+            .items {
+                // border: 1px solid red;
+                width: 160px;
+                @extend .flex;
+                .item-logo {
+                    font-size: 45px;
+                    color: $primary_color;
+                }
+
+                .item-content {
+                    .numbers {
+                        font-size: 55px;
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+    }
+}

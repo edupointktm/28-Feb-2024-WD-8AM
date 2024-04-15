@@ -1,11 +1,17 @@
 // Color (2-3), font (2-3), heading (font), sub-heading (font), content
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
-$primary_color:rgb(1, 82, 82);
- 
+
+
+$primary_color: rgb(0, 110, 57);
+$secondary_color: rgb(91, 91, 91);
+
 a {
     text-decoration: none;
     color: black
@@ -15,62 +21,35 @@ ul {
     list-style: none;
 }
 
-.flex{
+.flex {
     display: flex;
     gap: 10px;
     justify-content: space-between;
     align-items: center;
 }
 
-
-
-header {
-    background-color: $primary_color;
-    padding: 20px 0;
-    .container {
-        width: 1200px;
-        margin: auto;
-        @extend .flex;
-        .logo {
-            font-size: 35px;
-            color: yellow;
-        }
-
-        nav {
-           margin-right: 250px;
-            ul {
-                @extend .flex;
-                li {
-                    padding: 10px 20px;
-                    border-radius: 10px;
-                    a {
-                        color: white;
-
-                        &:hover{
-                            color:red;
-                        }
-                    }
-                 &:hover{
-                    background-color: yellow;
-                 }
-                }
-            }
-        }
-
-        .social-media{
-            font-size: 20px;
-            color: orange;
-            i{
-                padding: 0 10px;
-            }
-        }
-    }
+@mixin container() {
+    width: 1200px;
+    margin: auto;
 }
 
-#slider{
-    .image{
-        background-image: url(https://prabhatmallik.com.np/html/01/assets/img/hero-bg.jpg);
-        height: 650px;
-        background-size: cover;
-    }
+@mixin heading() {
+    font-size: 45px;
+    padding: 10px 0;
+    color: $primary_color;
+    font-weight: 500;
 }
+
+
+
+@import "partial/header";
+
+@import "partial/slider";
+
+@import "partial/about";
+
+
+@import "partial/facts";
+
+
+

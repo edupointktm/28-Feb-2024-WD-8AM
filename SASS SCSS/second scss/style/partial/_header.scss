@@ -1,0 +1,49 @@
+
+header {
+    background-color: $primary_color;
+    padding: 20px 0;
+
+    .container {
+        @include container();
+        @extend .flex;
+
+        .logo {
+            font-size: 35px;
+            color: yellow;
+        }
+
+        nav {
+            margin-right: 250px;
+
+            ul {
+                @extend .flex;
+
+                li {
+                    padding: 10px 20px;
+                    border-radius: 10px;
+
+                    a {
+                        color: white;
+
+                        &:hover {
+                            color: red;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: yellow;
+                    }
+                }
+            }
+        }
+
+        .social-media {
+            font-size: 20px;
+            color: orange;
+
+            i {
+                padding: 0 10px;
+            }
+        }
+    }
+}

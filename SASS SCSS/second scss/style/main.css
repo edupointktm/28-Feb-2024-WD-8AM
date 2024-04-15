@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -13,7 +15,7 @@ ul {
   list-style: none;
 }
 
-.flex, header .container nav ul, header .container {
+.flex, #facts .container .box .items, #facts .container .box, #about .container .box, header .container nav ul, header .container {
   display: flex;
   gap: 10px;
   justify-content: space-between;
@@ -21,7 +23,7 @@ ul {
 }
 
 header {
-  background-color: rgb(1, 82, 82);
+  background-color: rgb(0, 110, 57);
   padding: 20px 0;
 }
 header .container {
@@ -60,4 +62,52 @@ header .container .social-media i {
   background-image: url(https://prabhatmallik.com.np/html/01/assets/img/hero-bg.jpg);
   height: 650px;
   background-size: cover;
+}
+
+#about {
+  padding: 30px 0;
+}
+#about .container {
+  width: 1200px;
+  margin: auto;
+}
+#about .container .heading {
+  font-size: 45px;
+  padding: 10px 0;
+  color: rgb(0, 110, 57);
+  font-weight: 500;
+}
+#about .container .box .right .sub-heading {
+  font-size: 45px;
+  padding: 10px 0;
+  color: rgb(0, 110, 57);
+  font-weight: 500;
+}
+
+#facts {
+  padding: 30px 0;
+}
+#facts .container {
+  width: 1200px;
+  margin: auto;
+}
+#facts .container .heading {
+  font-size: 45px;
+  padding: 10px 0;
+  color: rgb(0, 110, 57);
+  font-weight: 500;
+}
+#facts .container .box {
+  padding: 0 25px;
+}
+#facts .container .box .items {
+  width: 160px;
+}
+#facts .container .box .items .item-logo {
+  font-size: 45px;
+  color: rgb(0, 110, 57);
+}
+#facts .container .box .items .item-content .numbers {
+  font-size: 55px;
+  font-weight: 900;
 }/*# sourceMappingURL=main.css.map */

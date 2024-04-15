@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+$primary-color: #80B421;
+
+.navbar-brand {
+    color: $primary-color;
+    font-size: 28px;
+    font-weight: 900;
+
+    span {
+        color: gray;
+    }
+}
+
+
+.nav-link {
+    font-size: 18px;
+    color: rgb(83, 83, 83);
+    margin-right: 25px;
+    padding: 8px 30px;
+
+    &:hover {
+        color: $primary-color;
+
+    }
+
+}
+
+
+.nav-item .active {
+    border-radius: 10px;
+
+    background-color: $primary-color;
+
+
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+}
+
+.carousel-caption {
+    bottom: 200px;
+
+    h5 {
+        font-size: 45px;
+        background-color: #81b42195;
+        display: inline-block;
+        padding: 8px 15px;
+
+    }
+
+    p {
+        font-size: 24px;
+        color: black;
+        text-shadow: 1px 1px 1px white;
+        font-weight: 500;
+    }
+}
+
+#our-team {
+    padding: 40px 0;
+
+    
+        .heading {
+            font-size: 25px;
+            color: $primary-color;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .content {
+            font-size: 16px;
+            text-align: center;
+            color: gray;
+            padding: 0 0 25px 0;
+        }
+
+        .card {
+            text-align: center;
+            border: none;
+
+            img {
+                border-radius: 50%;
+                border: 2px solid $primary-color;
+                width: 90%;
+            }
+
+            .title {
+                font-size: 20px;
+                padding: 15px 0 5px 0;
+                font-weight: 500;
+                color: gray;
+            }
+
+            .social-media {
+                padding: 10px;
+
+                i {
+                    border: 2px solid rgb(206, 205, 205);
+                    border-radius: 10px;
+                    color: $primary-color;
+                    font-size: 20px;
+                    padding: 10px;
+                }
+            }
+        }
+    
+}
