@@ -50,5 +50,35 @@ var names="Hari Om Dhakal"
 // console.log(5>=5)  //true
 // console.log(5<=5)  //true
 // console.log(5<5)  //true
-console.log(5=="5")  //true
-console.log(5==="5")  //flase
+// console.log(5=="5")  //true
+// console.log(5==="5")  //flase
+
+
+// console.log(true && true && true && true && true) => 
+// console.log(false || false || false || false || false) 
+
+// console.log(5 !=6 )
+// console.log(5 !=5 )
+
+// var a = 5
+// console.log(typeof(a))  //Return: numer
+
+
+// var a = 5.5 
+// console.log(typeof(a))  //Return : number
+
+
+// var a = "Ram kumar"
+// console.log(typeof(a))  //Return : string
+
+// var a = "5"
+// console.log(typeof(a))  //Return : string
+
+// var a
+// console.log(typeof(a))  //Return : undefined
+
+// var a = true
+// console.log(typeof(a))  //Return : boolean 
+
+// var a = null
+// console.log(typeof(a))  //Return : undefined
