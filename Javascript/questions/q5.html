@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        // Quesiotins No 5:
+        var n = [14, 18, 9, 23, 8, 6, 7, 11, 15, 16]
+        var l = n.length
+
+        //for Sum
+        var s=0
+        document.write(`numbers are :`)
+        for(i=0; i<l; i++){
+            s = s + n[i]
+            document.write(`${n[i]}, `)
+        }
+
+        document.write(` <br> Sum = ${s} <br>`)
+
+        //for average
+        var avg = s/l
+        document.write(`Average = ${avg} <br>`)
+
+
+        // for largest
+        var large = 0
+        for(i=0; i<l; i++){
+            if(n[i]>large){
+                large=n[i]
+            }
+        }
+        document.write(`Large Number = ${large} <br>`)
+
+        // for small
+        var small = n[0]
+        for(i=0; i<l; i++){
+            if(n[i]<small){
+                small = n[i]
+            }
+        }
+
+        document.write(`Smallest Number = ${small}`)
+    </script>
+</body>
+</html>
