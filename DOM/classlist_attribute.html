@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .home{
+            font-size: 20px;
+            margin: 5px;
+            background-color: darkcyan;
+            color: white;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .hidehome{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="removeDesign()">Remove Design</button>
+    <button class="show" onclick="show()">SHOW</button>
+    <button class="hide" onclick="hide()">HIDE</button> 
+    <button class="showhide" onclick="showHide()">Show/Hide</button> 
+    <button id="remove" onclick="selfTarget()">HIDE</button>
+    <br><br>
+    <div class="home">HOME</div>
+    <hr>
+    <br><br>
+    <button class="on-off" onclick="onOff()">ON</button><br><br>
+    <img src="https://prabhatmallik.com.np/dom/image/OFF.jpg" id="img" alt="" width="20%">
+    <script>
+        function hide(){
+               document.querySelector('.home').classList.add('hidehome')
+        }
+
+        var show=()=>{
+            document.querySelector('.home').classList.remove('hidehome')
+        }
+
+        var showHide=()=>{
+            document.querySelector('.home').classList.toggle('hidehome')
+        }
+
+        var removeDesign = function(){
+            document.querySelector('.home').classList.remove('home')
+        }
+
+        var selfTarget = ()=>{
+            var get_name = document.querySelector('#remove').innerHTML
+
+           if(get_name=="HIDE"){
+            document.querySelector('#remove').innerHTML = "SHOW"
+            document.querySelector('.home').classList.add('hidehome')
+           }
+           else{
+            document.querySelector('#remove').innerHTML = "HIDE"
+            document.querySelector('.home').classList.remove('hidehome')
+           }
+        }
+          function onOff(){
+            var get_name = document.querySelector('.on-off').innerHTML
+            if(get_name=="ON"){
+                document.querySelector('.on-off').innerHTML="OFF"
+                document.querySelector('#img').src = "https://prabhatmallik.com.np/dom/image/ON.jpg"
+            }
+            else{
+                document.querySelector('.on-off').innerHTML="ON"
+                document.querySelector('#img').src = "https://prabhatmallik.com.np/dom/image/OFF.jpg"
+            }
+            
+   
+      
+        }
+    </script>
+
+</body>
+</html>

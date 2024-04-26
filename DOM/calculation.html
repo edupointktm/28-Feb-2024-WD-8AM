@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="first-no">
+    <input type="number" id="second-no">
+    <select name="" id="cal">
+        <option value="+">ADD (+) </option>
+        <option value="-">Sub (-) </option>
+        <option value="*">MUL (*) </option>
+    </select>
+    <button onclick="calculation()">Calculate</button>
+    <div>
+        <h4 id="result">Result: </h4>
+    </div>
+
+    <script>
+        function calculation() {
+            var get_first_no = parseInt(document.querySelector('#first-no').value)
+            var get_second_no = parseInt(document.querySelector('#second-no').value)
+            var get_cal = document.querySelector('#cal').value
+
+            if(get_cal=="+"){
+                var result = get_first_no + get_second_no
+            }
+            else if(get_cal=="-"){
+                var result = get_first_no - get_second_no
+            }
+            else if(get_cal==="*"){
+                var result = get_first_no * get_second_no
+            }
+           
+            document.querySelector('#result').innerHTML = "Result :" + result
+        }
+    </script>
+</body>
+
+</html>

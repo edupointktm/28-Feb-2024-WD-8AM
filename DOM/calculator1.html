@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .container {
+    background: black;
+    padding: 25px ;
+    width: 350px;
+    /* border-radius: 10px; */
+  }
+
+.calc-text {
+    margin-bottom: 20px;
+    padding-left: 5px;
+  }
+  
+  .calc-text p {
+    width: 100%;
+    font-size:50px;
+    font-weight:200;
+    text-align: end;
+    background: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: rgb(48, 48, 48);
+    height: 60px;
+    
+  }
+button {
+    background: #272727;
+    color: #fff;
+    font-size: 25px;
+    border: none;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+  }
+  
+
+  
+  .calc-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 10px;
+  }
+  
+  .key-zero {
+    grid-column: span 2;
+    width: 100%;
+    border-radius: 30px;
+  }
+  
+  .key-operate {
+    background: #FF9500;
+  }
+  
+  .key-others {
+    background: #918f8f;
+    color: #000000;
+  }
+  
+  
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <!-- Inside the container will add an HTML elements.-->
+        
+    <div class="calc-text">
+        <p name="user-input" id="user-input"></p>
+    </div>
+
+    <div class="calc-keys">
+        <button type="button" class="key-others operations" onclick="document.querySelector('#user-input').innerHTML =''">C</button>
+        <button type="button" class="key-others operations">+/-</button>
+        <button type="button" class="key-others operations">%</button>
+        <button type="button" class="key-operate operations">/</button>
+        <button type="button" class="numbers" onclick="document.querySelector('#user-input').innerHTML +='7'">7</button>
+        <button type="button" class="numbers" onclick="document.querySelector('#user-input').innerHTML +='8'">8</button>
+        <button type="button" class="numbers" onclick="document.querySelector('#user-input').innerHTML +='9'">9</button>
+        <button type="button" class="key-operate operations" onclick="document.querySelector('#user-input').innerHTML +='*'">*</button>
+        <button type="button" class="numbers" onclick="document.querySelector('#user-input').innerHTML +='4'">4</button>
+        <button type="button" class="numbers" onclick="document.querySelector('#user-input').innerHTML +='5'">5</button>
+        <button type="button" class="numbers" onclick="document.querySelector('#user-input').innerHTML +='6'">6</button>
+        <button type="button" class="key-operate operations">-</button>
+        <button type="button" class="numbers">1</button>
+        <button type="button" class="numbers">2</button>
+        <button type="button" class="numbers">3</button>
+        <button type="button" class="key-operate operations">+</button>
+        <button type="button" class="key-zero numbers">0</button>
+        <button type="button" class="numbers">.</button>
+        <button type="button" class="key-operate operations" onclick="calcualte()">=</button>
+    </div>
+
+    <script>
+        function calcualte(){
+            var get_value = document.querySelector('#user-input').innerHTML
+            
+            document.querySelector('#user-input').innerHTML = eval(get_value)
+        }
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broadway</title>
+</head>
+<body>
+    <input type="text" id="title">
+    <button onclick="msg()">Change Title</button>
+    <hr>
+    <br>
+    <button onclick="changeColor()">Chage Red</button> 
+    <button onclick="hide()">HIDE</button>
+    <button onclick="show()">SHOW</button>
+    <button onclick="backgroundColor()"> Background Yellow</button>
+    <br> <br>
+    <div id="content">Broadway Infosys</div>
+    <hr><br>
+
+    <input type="color" id="color"> 
+    <button onclick="color()">Chage</button>
+    <br><br>
+    <div id="content2">BROADWAY INFOSYS</div>
+    <script>
+        var msg = () =>{
+            var t = document.getElementById("title").value
+            document.title=t
+           
+        }
+
+        var changeColor=()=>{
+            document.getElementById('content').style.color='red'
+        }
+
+        var hide = ()=>{
+            document.querySelector('#content').style.display='none'
+        }
+
+        var show=()=>{
+            document.querySelector('#content').style.display='block'
+        }
+
+        var backgroundColor = ()=>{
+            document.querySelector('#content').style.backgroundColor='yellow'
+        }
+
+
+        function color(){
+            var get_color = document.querySelector('#color').value
+            document.querySelector('#content2').style.color =get_color
+            
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator 2</title>
+    <link rel="stylesheet" href="cal.css">
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 250px;
+  height: 400px;
+  background-color: #3E4768;
+  padding: 15px;
+}
+
+header {
+  background-color: #182033;
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: 10px;
+  height: 100px;
+  line-height: 100px;
+  text-align: end;
+  padding: 0 10px;
+  color: white;
+}
+
+#calc {
+  background-color: #182033;
+  height: 300px;
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+#calc .top {
+  margin-top: 10px;
+}
+#calc .middle {
+  margin-top: 10px;
+}
+#calc .but {
+  margin-top: 10px;
+}
+#calc .buttom {
+  margin-top: 10px;
+}
+#calc .re {
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#del a {
+  background-color: #63709A;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+ul li {
+  margin: 15px 0;
+  color: black;
+  width: 25%;
+  text-align: center;
+}
+ul li a {
+  color: black;
+  text-decoration: none;
+  background-color: whitesmoke;
+  padding: 15px 20px;
+  box-shadow: #182033;
+}
+
+#res {
+  width: 100%;
+}
+#res a {
+  background-color: #63709A;
+  color: white;
+  padding: 15px 45px;
+  width: 100%;
+  box-shadow: #3E4768;
+}
+
+#equal {
+  width: 100%;
+}
+#equal a {
+  background-color: #D24033;
+  color: white;
+  width: 50%;
+  padding: 15px 50px;
+  box-shadow: #63709A;
+}/*# sourceMappingURL=cal.css.map */
+    </style>
+</head>
+<body>
+    <header>
+        8+9
+    </header>
+    <section id="calc">
+        <div class="top">
+            <ul>
+                <li><a href="">7</a></li>
+                <li><a href="">8</a></li>
+                <li><a href="">9</a></li>
+                <li id="del"><a href="">Del</a></li>
+            </ul>
+        </div>
+        <div class="middle">
+            <ul>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="">6</a></li>
+                <li><a href="">+</a></li>
+            </ul>
+        </div>
+        <div class="but">
+            <ul>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">-</a></li>
+            </ul>
+        </div>
+        <div class="buttom">
+            <ul>
+                <li><a href="">.</a></li>
+                <li><a href="">0</a></li>
+                <li><a href="">/</a></li>
+                <li><a href="">x</a></li>
+            </ul>
+        </div>
+        <div class="re">
+            <ul>
+                <li id="res"><a href="">Reset</a></li>
+                <li id="equal"><a href="">=</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
