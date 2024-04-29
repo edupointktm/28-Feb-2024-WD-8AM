@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 300px;
+  height: 900px;
+  padding: 150px 150px;
+  background-color: black;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  background-color: antiquewhite;
+  font-weight: 500;
+  font-size: 35px;
+  border-radius: 10px;
+}
+
+#calc {
+  height: 550px;
+  width: 100%;
+  line-height: 800px;
+  background-color: rgb(70, 82, 82);
+  border-radius: 15px;
+}
+
+.head {
+  height: 100px;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
+  text-align: end;
+  line-height: 100px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+ul li {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: gray;
+  text-align: center;
+  line-height: 70px;
+  margin: 5px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Calculator</div>
+        <!-- <div class="social"></div> -->
+    </header>
+    <p class="head" id="user-input"></p>
+    <section id="calc">
+        <div class="c">
+            <ul>
+                <li><a href="" onclick="document.querySelector('#user-input').innerHTML =''">C</a></li>
+                <li><a href="">+/-</a></li>
+                <li><a href="">%</a></li>
+                <li><a href="">/</a></li>
+            </ul>
+        </div>
+        <div class="7">
+            <ul>
+                <li><a href="#" onclick="document.querySelector('#user-input').innerHTML +='7'">7</a></li>
+                <li><a href="#" onclick="document.querySelector('#user-input').innerHTML +='8'">8</a></li>
+                <li><a href="#" onclick="document.querySelector('#user-input').innerHTML +='9'">9</a></li>
+                <li><a href="#" onclick="document.querySelector('#user-input').innerHTML +='*'">x</a></li>
+            </ul>
+        </div>
+        <div class="4">
+            <ul>
+                <li><a href="" onclick="document.querySelector('#user-input').innerHTML +='4'">4</a></li>
+                <li><a href="" onclick="document.querySelector('#user-input').innerHTML +='5'">5</a></li>
+                <li><a href="" onclick="document.querySelector('#user-input').innerHTML +='6'">6</a></li>
+                <li><a href="" onclick="document.querySelector('#user-input').innerHTML +='-'">-</a></li>
+            </ul>
+        </div>
+        <div class="1">
+            <ul>
+                <li><a href="" onclick="document.querySelector('#user-input').innerHTML +='1'">1</a></li>
+                <li><a href="" onclick="document.querySelector('#user-input').innerHTML +='2'">2</a></li>
+                <li><a href="" onclick="document.querySelector('#user-input').innerHTML +='3'">3</a></li>
+                <li><a href="" onclick="document.querySelector('#user-input').innerHTML +='+'">+</a></li>
+            </ul>
+        </div>
+        <div class="0">
+            <ul>
+                <li><a href="">0</a></li>
+                <li><a href=""></a></li>
+                <li><a href="">.</a></li>
+                <li><a href="" onclick="calculate()">=</a></li>
+    
+            </ul>
+    
+        </div>
+        <script>
+            function calculate(){
+                var get_value = document.querySelector('#user-input').innerHTML
+                document.querySelector('#user-input').innerHTML = eval(get_value)
+            }
+        </script>
+    </section>
+</body>
+</html>

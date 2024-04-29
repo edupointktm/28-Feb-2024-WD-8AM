@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            background-color: darkcyan;
+            color: white;
+            padding: 10px 15px;
+            width: 150px;
+           
+        }
+        .cont{
+            margin: 20px 0 0 30px;
+            width: 150px;
+            text-align: center;
+            background-color: darkgray;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="hide">HIDE</button>
+    <button id="show">SHOW</button>
+    <button id="show-hide">Hide/Show</button>
+
+    <button id ="fade-in">Fade In</button>
+    <button id ="fade-out">Fade Out</button>
+    <button id ="fade-toggle">Fade toggle</button>
+
+    <button id ="slide-up">Slide Up</button>
+    <button id ="slide-down">Slide Down</button>
+    <button id ="slide-toggle">Slide Toggle</button>
+
+    <button id="animation">Animation</button>
+    <button id="stop">STOP</button>
+    <h3>INFOSYS</h3>
+    <hr> <br>
+    <h4> To ADD Something</h4>
+    <button id="prepend">Prepend</button>
+    <button id="append">Append</button>
+    <button id="before">Before</button>
+    <button id="after">After</button> 
+    <div class="cont">BROADWAY</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        //Effect
+        $('#hide').click(function(){
+            $('h3').hide()
+        })
+
+        $('#show').click(function(){
+            $('h3').show()
+        })
+
+        $('#show-hide').click(function(){
+            $('h3').toggle(6000)
+        })
+
+        $('#fade-in').click(function(){
+            $('h3').fadeIn()
+        })
+
+        $('#fade-out').click(function(){
+            $('h3').fadeOut()
+        })
+
+        $('#fade-toggle').click(function(){
+            $('h3').fadeToggle()
+        })
+
+        $('#slide-up').click(function(){
+            $('h3').slideUp()
+        })
+
+        $('#slide-down').click(function(){
+            $('h3').slideDown()
+        })
+
+        $('#slide-toggle').click(function(){
+            $('h3').slideToggle()
+        })
+
+        $('#animation').click(function(){
+            $('h3').animate({ width: '800px'},3000)
+           
+        })
+
+        $('#stop').click(function(){
+            $('h3').stop()
+           
+        })
+
+
+        //Event
+        $('h3').mouseover(function(){
+            $('h3').css('background-color','red')
+        })
+
+        $('h3').mouseleave(function(){
+            $('h3').css('background-color','green')
+        })
+
+        $('h3').click(function(){
+            $('h3').css('background-color','blue')
+        })
+
+
+        //to add something 
+        $('#prepend').click(function(){
+            $('.cont').prepend("Welcome ")
+        })
+
+        $('#append').click(function(){
+            $('.cont').append(" Infosys ")
+        })
+        
+        $('#before').click(function(){
+            $('.cont').before("<br><br> WELCOME ")
+        })
+
+        $('#after').click(function(){
+            $('.cont').after(" BYE ")
+        })
+    </script>
+
+</body>
+</html>
