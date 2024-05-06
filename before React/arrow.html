@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="root"></div>
+
+    <script>
+        x=50
+        y=10
+        // function message(a, b){
+        //     c=a*b
+        //     document.getElementById('root').innerHTML = c
+        // }
+        // message(x, y)
+
+        //By useing Arrow funciton:
+        message=(a, b)=> document.getElementById('root').innerHTML = a*b
+        message(x, y)
+    </script>
+</body>
+</html>

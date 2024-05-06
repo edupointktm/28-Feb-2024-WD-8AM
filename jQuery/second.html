@@ -19,6 +19,12 @@
             background-color: darkgray;
             padding: 5px 10px;
         }
+        .board{
+            background-color: rgb(198, 198, 198);
+            width: 450px;
+            height: 150px;
+            margin: 5px;
+        }
     </style>
 </head>
 <body>
@@ -44,6 +50,10 @@
     <button id="before">Before</button>
     <button id="after">After</button> 
     <div class="cont">BROADWAY</div>
+    <hr>
+    <h2> Type Here: </h2>
+    <input type="text">
+    <div class="board"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -87,7 +97,7 @@
         })
 
         $('#animation').click(function(){
-            $('h3').animate({ width: '800px'},3000)
+            $('h3').animate({ width: '800px', height:'250px'})
            
         })
 
