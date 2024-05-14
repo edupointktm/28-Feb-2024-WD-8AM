@@ -5,6 +5,7 @@ import Contact from './Contact'
 import About from './About'
 import Page_no_found from './Page_no_found'
 import Student_details from './Student_details'
+import Student_full_details from './Student_full_details'
 
 
 function Sections() {
@@ -15,6 +16,7 @@ function Sections() {
         <Route path = '/contact' element={<Contact/>}/>
         <Route path = '/about' element={<About/>}/>
         <Route path = '/studentdetails' element={<Student_details/>}/>
+        <Route path = '/studentfulldetails/:sid' element={<Student_full_details/>}/>
         <Route path = '*' element={<Page_no_found/>}/>
     </Routes>
 
