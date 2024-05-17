@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root{
+    --primary-color : rgb(2, 164, 13);
+    --heading:45px;
+    --white:white;
+    --content-color:rgb(33, 37, 41)
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+    
+
+}
+
+    .flex{
+        display: flex;
+        gap:10px;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+#top{
+    background-color: #212934;
+    color:var(--primary-color);
+    font-size: 12px;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+#top .container .social-media a{
+    color:white
+}
+
+header{
+    padding: 15px 0;
+}
+header .container .logo{
+    color: var(--primary-color);
+    font-size: 48px;
+    font-weight: 400;
+}
+
+header .container .nav ul li a{
+    padding: 0 60px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+header .container .user i{
+    padding: 0 0 0 40px;
+    font-size: 20px;
+}
+
+#slider{
+    background-color: #EFEFEF;
+    padding: 25px 0;
+}
+
+
+#slider .container .left{
+    width: 700px;
+    
+}
+
+#slider .container .left .heading{
+    font-size: var(--heading);
+    font-weight: 300;
+    color: var(--primary-color);
+} 
+#slider .container .left .heading span{
+    font-weight: 500;
+    
+}
+
+#slider .container .left .sub-heading{
+    font-size: 30px;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+#slider .container .left .content{
+    font-size: 18px;
+    font-weight: 300;
+    padding: 5px 0;
+    line-height: 28px;
+}
+
+#slider .container .right{
+    
+}
+
+#slider .container .right img{
+    width: 100%;
+
+}
+
+#month .container .heading{
+    font-size: var(--heading);
+    font-weight: 100;
+    color:var(--primary-color);
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+#month .container .content{
+    font-size:18px;
+    font-weight: 300;
+    color:var(--content-color);
+    text-align: center;
+    padding-top: 10px 0;
+
+}
+#month .container .container .card{
+    width: 320px;
+    padding: 40px 0 10px 0 ;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+#month .container .container .image{
+   height: 320px;
+}
+
+#month .container .container .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+ }
